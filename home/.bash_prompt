@@ -50,16 +50,12 @@ else
     RESET="\033[m"
 fi
 
-parse_git_dirty () {
+function parse_git_dirty() {
   [[ $(git status 2> /dev/null | tail -n1) != "nothing to commit (working directory clean)" ]] && echo "*"
 }
-parse_git_branch () {
+function parse_git_branch() {
   git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e "s/* \(.*\)/\1$(parse_git_dirty)/"
 }
 
-if [[ ${EUID} == 0 ]] ; then
-    PS1="[\t][\[${BOLD}${RED}\]\u@\[$CYAN\]\h \[$BASE0\]\[$BLUE\]\w\[$BASE0\]\$([[ -n \$(git branch 2> /dev/null) ]] && echo \" on \")\[$YELLOW\]\$(parse_git_branch)\[$BASE0\]]\$ \[$RESET\]"
-else
-    PS1="[\t][\[${BOLD}${CYAN}\]\u@\[$CYAN\]\h \[$BASE0\]\[$BLUE\]\w\[$BASE0\]\$([[ -n \$(git branch 2> /dev/null) ]] && echo \" on \")\[$YELLOW\]\$(parse_git_branch)\[$BASE0\]]\$ \[$RESET\]"
-fi
-
+export SUDO_PS1="[\t][\[${BOLD}${RED}\]\u@\[$RED\]\h \[$BASE0\]\[$BLUE\]\w\[$BASE0\]\$([[ -n \$(git branch 2> /dev/null) ]] && echo \" on \")\[$YELLOW\]\$(parse_git_branch)\[$BASE0\]]\$ \[$RESET\]"
+export PS1="[\t][\[${BOLD}${CYAN}\]\u@\[$CYAN\]\h \[$BASE0\]\[$BLUE\]\w\[$BASE0\]\$([[ -n \$(git branch 2> /dev/null) ]] && echo \" on \")\[$YELLOW\]\$(parse_git_branch)\[$BASE0\]]\$ \[$RESET\]"
