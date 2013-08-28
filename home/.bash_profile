@@ -27,3 +27,6 @@ complete -W "NSGlobalDomain" defaults
 if [ -f /usr/local/bin/brew ]; then
 	source "`brew --prefix grc`/etc/grc.bashrc"
 fi
+if [ -f $HOME/.rvm/scripts/rvm ]; then
+	source $HOME/.rvm/scripts/rvm
+fi
