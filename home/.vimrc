@@ -44,11 +44,11 @@ endtry
 
     " Highlighted text is unreadable in Terminal.app because it
     " does not support setting of the cursor foreground color.
-    if !has('gui_running') && $TERM_PROGRAM == 'Apple_Terminal'
-        let g:solarized_termcolors = &t_Co
-        let g:solarized_termtrans = 1
-        colorscheme solarized
-    endif
+
+    let g:solarized_termcolors = &t_Co
+    let g:solarized_termtrans = 1
+    colorscheme solarized
+
 
 endif
 
