@@ -1,3 +1,5 @@
+" add linenumbers
+set number
 
 " don't make vim vi-compatible
 set nocompatible
