@@ -5,7 +5,6 @@ set nocompatible
 cmap w!! w !sudo tee % >/dev/null
 
 " Solarized colorscheme
-
 syntax enable
 set background=dark
 colorscheme solarized
