@@ -13,6 +13,15 @@ cmap w!! w !sudo tee % >/dev/null
 " enable syntax highlighting
 syntax enable
 
+" set tab=2spaces
+set tabstop=2
+
+" highlight searches
+set hlsearch
+
+" enable mouse support
+set mouse=a
+
 " Color Scheme ----------------------------------------------------------- {{{
 
 " Set the color scheme.
