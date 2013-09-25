@@ -22,6 +22,12 @@ set hlsearch
 " enable mouse support
 set mouse=a
 
+" Show the current mode
+set showmode
+
+" Set ruler
+set ruler
+
 " Color Scheme ----------------------------------------------------------- {{{
 
 " Set the color scheme.
