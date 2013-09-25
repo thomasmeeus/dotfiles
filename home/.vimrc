@@ -36,7 +36,6 @@ endtry
         colorscheme solarized
     endif
 
-    call togglebg#map("<F2>")
 endif
 
 " }}}
