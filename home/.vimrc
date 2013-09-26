@@ -1,6 +1,9 @@
 " add linenumbers
 set number
 
+" highlight current line
+set cursorline
+
 " don't make vim vi-compatible
 set nocompatible
 
