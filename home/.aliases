@@ -22,3 +22,15 @@ alias s="subl ."
 
 # Add some colors to ls
 alias ls="ls -G"
+
+# Use GNU-utils instead of default osx ones
+alias rm="grm"
+alias mkdir="gmkdir"
+alias tar="gtar"
+alias grep="ggrep"
+alias egrep="gegrep"
+alias rmdir="grmdir"
+alias sed="gsed"
+alias sort="gsort"
+alias tr="gtr"
+alias uniq="guniq"
