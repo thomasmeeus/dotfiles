@@ -23,7 +23,7 @@ alias s="subl ."
 # Add some colors to ls
 alias ls="ls -G"
 
-if [ ! /etc/lsb-release ]
+if [ ! -e /etc/lsb-release ]
 then 
 # Use GNU-utils instead of default osx ones
 	alias rm="grm"
