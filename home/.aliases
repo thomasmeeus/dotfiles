@@ -16,6 +16,7 @@ alias whois="whois -h whois-servers.net"
 
 # Stream some music
 alias mm="open -a iTunes http://mp3.streampower.be/mnm-high.mp3"
+alias rgr="open -a iTunes http://stream.intronic.nl/rgrfm"
 
 # Alias for Sublimetext
 alias s="subl ."
