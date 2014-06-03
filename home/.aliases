@@ -38,4 +38,5 @@ then
 	alias tr="gtr"
 	alias uniq="guniq"
 	alias awk="gawk"
+	alias dircolors="gdircolors"
 fi
