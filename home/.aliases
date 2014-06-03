@@ -37,4 +37,5 @@ then
 	alias sort="gsort"
 	alias tr="gtr"
 	alias uniq="guniq"
+	alias awk="gawk"
 fi
