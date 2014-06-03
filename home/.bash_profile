@@ -33,6 +33,3 @@ fi
 if [ -f $HOME/.rvm/scripts/rvm ]; then
 	source $HOME/.rvm/scripts/rvm
 fi
-
-# Enable colors
-eval `dircolors ~/.dir_colors`
