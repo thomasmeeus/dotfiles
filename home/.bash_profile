@@ -1,3 +1,6 @@
+# Correct path for homebrew
+export PATH=$(brew --prefix ruby)/bin:$PATH
+
 # Load ~/.extra, ~/.bash_prompt, ~/.exports, ~/.aliases, and ~/.functions
 # ~/.extra can be used for settings you don’t want to commit
 for file in ~/.{aliases,extra,bash_prompt,exports,functions}; do
