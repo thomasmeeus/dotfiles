@@ -1,4 +1,7 @@
 # Correct path for homebrew
+export PATH="$PATH:/usr/local/bin/"
+
+# Correct path for ruby
 export PATH=$(brew --prefix ruby)/bin:$PATH
 
 # Load ~/.extra, ~/.bash_prompt, ~/.exports, ~/.aliases, and ~/.functions
