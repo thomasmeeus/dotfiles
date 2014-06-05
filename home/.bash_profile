@@ -36,6 +36,8 @@ complete -W "NSGlobalDomain" defaults
 if [ -f /usr/local/bin/brew ]; then
 	source "`brew --prefix grc`/etc/grc.bashrc"
 fi
-if [ -f $HOME/.rvm/scripts/rvm ]; then
-	source $HOME/.rvm/scripts/rvm
-fi
+
+[[ -s "$HOME/.profile" ]] && source "$HOME/.profile" # Load the default .profile
+
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
+
