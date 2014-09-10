@@ -22,20 +22,3 @@ alias s="subl ."
 
 # Add some colors to ls
 alias ls="ls -G"
-
-if [ ! -e /etc/lsb-release ]
-then 
-# Use GNU-utils instead of default osx ones
-	alias rm="grm"
-	alias mkdir="gmkdir"
-	alias tar="gtar"
-	alias grep="ggrep"
-	alias egrep="gegrep"
-	alias rmdir="grmdir"
-	alias sed="gsed"
-	alias sort="gsort"
-	alias tr="gtr"
-	alias uniq="guniq"
-	alias awk="gawk"
-	alias dircolors="gdircolors"
-fi
