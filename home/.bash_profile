@@ -1,6 +1,6 @@
 # Load ~/.extra, ~/.bash_prompt, ~/.exports, ~/.aliases, and ~/.functions
 # ~/.extra can be used for settings you don’t want to commit
-for file in ~/.{aliases,extra,bash_prompt,exports,functions}; do
+for file in ~/.{aliases,extra,bash_prompt,exports,functions,profile}; do
     [ -r "$file" ] && source "$file"
 done
 unset file
@@ -26,8 +26,4 @@ complete -W "NSGlobalDomain" defaults
 if [ -f /usr/local/bin/brew ]; then
 	source "`brew --prefix grc`/etc/grc.bashrc"
 fi
-
-[[ -s "$HOME/.profile" ]] && source "$HOME/.profile" # Load the default .profile
-
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 
