@@ -1,9 +1,3 @@
-# Correct path for homebrew
-export PATH="$PATH:/usr/local/bin/"
-
-# Correct path for ruby
-export PATH=$(brew --prefix ruby)/bin:$PATH
-
 # Load ~/.extra, ~/.bash_prompt, ~/.exports, ~/.aliases, and ~/.functions
 # ~/.extra can be used for settings you don’t want to commit
 for file in ~/.{aliases,extra,bash_prompt,exports,functions}; do
@@ -22,10 +16,6 @@ shopt -s histappend
 
 # Autocorrect typos in path names when using `cd`
 shopt -s cdspell
-
-# Prefer US English and use UTF-8
-export LC_ALL="en_US.UTF-8"
-export LANG="en_US"
 
 # Add tab completion for SSH hostnames based on /etc/ssh_config, ignoring wildcards
 [ -e "/etc/ssh_config" ] && complete -o "default" -o "nospace" -W "$(grep "^Host" /etc/ssh_config | grep -v "[?*]" | cut -d " " -f2)" scp sftp ssh
