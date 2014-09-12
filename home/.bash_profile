@@ -16,7 +16,6 @@ shopt -s histappend
 
 # Autocorrect typos in path names when using `cd`
 shopt -s cdspell
-shopt -s dirspell
 
 # Autocorrect window size after every command
 shopt -s checkwinsize
