@@ -17,6 +17,9 @@ shopt -s histappend
 # Autocorrect typos in path names when using `cd`
 shopt -s cdspell
 
+# Autocorrect window size after every command
+shopt -s checkwinsize
+
 # Add tab completion for SSH hostnames based on /etc/ssh_config, ignoring wildcards
 [ -e "/etc/ssh_config" ] && complete -o "default" -o "nospace" -W "$(grep "^Host" /etc/ssh_config | grep -v "[?*]" | cut -d " " -f2)" scp sftp ssh
 
