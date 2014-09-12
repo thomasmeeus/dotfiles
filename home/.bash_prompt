@@ -58,7 +58,7 @@ function parse_git_branch() {
 }
 
 if [[ ${EUID} == 0 ]] ; then
-	sudo export PS1="[\t][\[${BOLD}${RED}\]\u@\[$RED\]\h \[$BASE0\]\[$BLUE\]\w\[$BASE0\]\$([[ -n \$(git branch 2> /dev/null) ]] && echo \" on \")\[$YELLOW\]\$(parse_git_branch)\[$BASE0\]\[$RESET\]]\$ \[$RESET\]"
+	export PS1="[\t][\[${BOLD}${RED}\]\u@\[$RED\]\h \[$BASE0\]\[$BLUE\]\w\[$BASE0\]\$([[ -n \$(git branch 2> /dev/null) ]] && echo \" on \")\[$YELLOW\]\$(parse_git_branch)\[$BASE0\]\[$RESET\]]\$ \[$RESET\]"
 else
 	export SUDO_PS1="[\t][\[${BOLD}${RED}\]\u@\[$RED\]\h \[$BASE0\]\[$BLUE\]\w\[$BASE0\]\$([[ -n \$(git branch 2> /dev/null) ]] && echo \" on \")\[$YELLOW\]\$(parse_git_branch)\[$BASE0\]\[$RESET\]]\$ \[$RESET\]"
 	export PS1="[\t][\[${BOLD}${CYAN}\]\u@\[$CYAN\]\h \[$BASE0\]\[$BLUE\]\w\[$BASE0\]\$([[ -n \$(git branch 2> /dev/null) ]] && echo \" on \")\[$YELLOW\]\$(parse_git_branch)\[$BASE0\]\[$RESET\]]\$ \[$RESET\]"
