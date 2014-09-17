@@ -1,0 +1,8 @@
+source  /var/chef/cache/mutt/mutt-colors-solarized-dark-16.muttrc
+#source  /var/chef/cache/mutt/mutt-colors-solarized-light-16.muttrc
+
+set delete=ask-yes                        # Ask before doing a delete.
+set include                               # Include the message in replies.
+set sort_aux=date-received                # Sort threads by date received.
+set read_inc=100                          # Read counter ticks every 100 msgs.
+set write_inc=100                         # Write counter ticks every 100 msgs.
