@@ -7,6 +7,9 @@ set cursorline
 " don't make vim vi-compatible
 set nocompatible
 
+" enable backspace
+set backspace=2
+
 " forgot to use sudo for editing?
 cmap w!! w !sudo tee % >/dev/null
 

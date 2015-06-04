@@ -30,3 +30,5 @@ if [ -f /usr/local/bin/brew ]; then
 	source "`brew --prefix grc`/etc/grc.bashrc"
 fi
 
+
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
