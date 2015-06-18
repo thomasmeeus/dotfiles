@@ -15,7 +15,7 @@ alias mm="open -a iTunes http://mp3.streampower.be/mnm-high.mp3"
 alias rgr="open -a iTunes http://stream.intronic.nl/rgrfm"
 
 # Alias for Sublimetext
-alias s="subl ."
+alias s="/Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin/subl ."
 
 # Add some colors to ls
 alias ls="ls -G"
