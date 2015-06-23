@@ -25,9 +25,8 @@ then
   export PATH="/usr/local/bin/:$PATH"
   
   # Use GNU-utils instead of default osx ones
-  export PATH="#{opt_libexec}/gnubin:$PATH"
-  export MANPATH="#{opt_libexec}/gnuman:$MANPATH"
+  export PATH="$(brew --prefix coreutils)/libexec/gnubin:/usr/local/bin:$PATH"
 
   # Add RVM to PATH for scripting
-  export PATH="$PATH:$HOME/.rvm/bin" 
+  export PATH="$HOME/.rvm/bin:$PATH" 
 fi
