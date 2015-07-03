@@ -24,11 +24,8 @@ shopt -s checkwinsize
 # You could just use `-g` instead, but I like being explicit
 complete -W "NSGlobalDomain" defaults
 if [ -f /usr/local/bin/brew ]; then
-	source "`brew --prefix grc`/etc/grc.bashrc"
-fi
-
-if [ -e /usr/local/Cellar/bash-completion/ ]; then
-  . /usr/local/Cellar/bash-completion/1.3/etc/profile.d/bash_completion.sh
+	. `brew --prefix grc`/etc/grc.bashrc
+  . `brew --prefix bash-completion`/etc/profile.d/bash_completion.sh
 fi
 
 
