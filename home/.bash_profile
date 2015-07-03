@@ -20,14 +20,15 @@ shopt -s cdspell
 # Autocorrect window size after every command
 shopt -s checkwinsize
 
-# Add tab completion for SSH hostnames based on /etc/ssh_config, ignoring wildcards
-[ -e "/etc/ssh_config" ] && complete -o "default" -o "nospace" -W "$(grep "^Host" /etc/ssh_config | grep -v "[?*]" | cut -d " " -f2)" scp sftp ssh
-
 # Add tab completion for `defaults read|write NSGlobalDomain`
 # You could just use `-g` instead, but I like being explicit
 complete -W "NSGlobalDomain" defaults
 if [ -f /usr/local/bin/brew ]; then
 	source "`brew --prefix grc`/etc/grc.bashrc"
+fi
+
+if [ -e /usr/local/Cellar/bash-completion/ ]; then
+  . /usr/local/Cellar/bash-completion/1.3/etc/profile.d/bash_completion.sh
 fi
 
 
