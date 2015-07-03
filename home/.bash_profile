@@ -25,7 +25,7 @@ shopt -s checkwinsize
 complete -W "NSGlobalDomain" defaults
 if [ -f /usr/local/bin/brew ]; then
 	. `brew --prefix grc`/etc/grc.bashrc
-  . `brew --prefix bash-completion`/etc/profile.d/bash_completion.sh
+	. `brew --prefix bash-completion`/etc/profile.d/bash_completion.sh
 fi
 
 
