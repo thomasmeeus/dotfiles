@@ -1,0 +1,8 @@
+ Host *
+  SendEnv LANG LC_*
+  XAuthLocation /opt/X11/bin/xauth
+
+  ControlMaster auto
+  ControlPath ~/.ssh/sockets/%r@%h-%p
+  ControlPersist 600
+  User thomas
